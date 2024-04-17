@@ -1,0 +1,16 @@
+Extract all the concepts from the text beginning with [[START]] and ending in [[END]] into a JSON list of consisting of concept phrases present in the text. Also provide an explanation of why the concepts chosen are concepts. A concept is either one of the document's key takeaways or a term that is essential for expressing the document's key takeaways. Do not list administrative terms as concepts. When considering to take a phrase as a concept, answer the following questions:
+1. Is it a defined term?
+2. Is it used repeatedly in the text more than 2 times?
+3. Is it extensively focused on?
+4. Is it a noun or noun phrase?
+5. Is it an abbreviation of a previously labeled concept?
+6. Is it a variant form of a concept phrase?
+7. Is it an administrative term? That is, is it only related to how the course is operated, and not the content of the course? Announcements, Homeworks, Exams and Labs are administrative too.
+
+A valid response should only be a JSON list of concepts.
+
+[[START]]
+
+[[END]]
+
+Review the list to make consider administrative terms as concepts. Remember to separate the terms enclosed in parentheses. Finally, put it in a JSON list, like this: ["apples", "cherries"]
